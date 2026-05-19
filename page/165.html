@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <title>Trading Guide</title>
+
+    <meta name="title" content="Trading Guide">
+    <meta name="description" content="Trading Guide - Latest updates and news">
+    <link rel="canonical" href="https://dalanliyane292.github.io/">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#378d8a">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dalanliyane292.github.io/">
+    <meta property="og:title" content="Trading Guide">
+    <meta property="og:description" content="Trading Guide - Latest updates and news">
+    <meta property="og:site_name" content="Trading Guide">
+    <meta property="og:image" content="https://dalanliyane292.github.io/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://dalanliyane292.github.io/">
+    <meta name="twitter:title" content="Trading Guide">
+    <meta name="twitter:description" content="Trading Guide - Latest updates and news">
+    <meta name="twitter:image" content="https://dalanliyane292.github.io/logo.png">
+
+    <link rel="icon" href="https://dalanliyane292.github.io/assets/favicon.ico?v=1" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="https://dalanliyane292.github.io/assets/img/favicon-magazine.svg?v=1">
+    <link rel="shortcut icon" href="https://dalanliyane292.github.io/assets/favicon.ico?v=1" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://dalanliyane292.github.io/assets/img/favicon-magazine.svg?v=1">
+
+    <style>
+        /* BASE RESET */
+        html{font-size:16px;line-height:1.5}
+        body{margin:0;background:#edf1f2;color:#4c5560;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+        a{text-decoration:none;color:#2675A6;transition:.2s}
+        a:hover{color:#636363}
+        #content-wrap a{text-decoration:underline;text-underline-offset:2px}
+        #content-wrap a:hover{text-decoration-thickness:2px}
+        img{max-width:100%;height:auto}
+
+        /* HEADER */
+        #header-outer{width:100%}
+        #header-wrap{background:#424a56}
+        #header-content{max-width:980px;margin:0 auto;padding:0 36px;min-height:60px;display:flex;align-items:center}
+        .blog-title{margin:0;font-size:28px;text-transform:uppercase;font-weight:700}
+        .blog-title a{color:#fff}
+
+        /* NAVIGATION */
+        #navmenu-wrap{background:#1f6664;width:100%}
+        .navmenu{max-width:980px;margin:0 auto;padding:0 36px}
+        .navmenu-content ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+        .navmenu-content ul li{position:relative;margin-right:20px}
+        .navmenu-content ul li a{color:#f7fbff;font-weight:700;font-size:14px;line-height:52px;display:block;text-transform:uppercase}
+        .navmenu-content ul li a:hover{color:#ffffff;background:rgba(255,255,255,0.1)}
+
+        /* DROPDOWN */
+        .navmenu-content ul li ul{position:absolute;top:52px;left:0;background:#fff;box-shadow:0 5px 20px rgba(0,0,0,0.1);display:none;min-width:200px;z-index:99}
+        .navmenu-content ul li:hover ul{display:block}
+        .navmenu-content ul li ul li{margin:0;display:block;border-bottom:1px solid #eee}
+        .navmenu-content ul li ul li a{color:#636363;padding:10px 20px;line-height:normal;text-transform:none;font-weight:500}
+        .navmenu-content ul li ul li a:hover{color:#378d8a;background:#f9f9f9}
+
+        /* LAYOUT */
+        #wrapper{max-width:980px;margin:20px auto;display:flex;flex-wrap:wrap;background:#fff;padding:36px;box-sizing:border-box}
+        #content-wrap{flex:1 1 68%;max-width:68%;padding-right:36px;box-sizing:border-box}
+        #sidebar-wrap{flex:1 1 32%;max-width:32%;box-sizing:border-box}
+
+        /* WIDGETS */
+        .widget{margin-bottom:30px}
+        .widget h2.title, .normalwidget-title h2.title{font-size:16px;text-transform:uppercase;border-bottom:2px solid #1f6664;padding-bottom:8px;margin-bottom:20px;color:#1f2a36;font-weight:700}
+        .rudi-ad-slot{margin:14px 0;padding:0;overflow:hidden}
+        .rudi-ad-slot[data-lazy-ad]{min-height:0}
+
+        .popular-posts ul{list-style:none;padding:0}
+        .popular-posts li{margin-bottom:12px;border-bottom:1px solid #f0f0f0;padding-bottom:12px}
+        .popular-posts li a{font-weight:600;font-size:14px;color:#2f3a47;display:block;line-height:1.4}
+        .popular-posts li a:hover{color:#1f6664}
+
+        /* FOOTER */
+        #footer-outer{background:#2d2d2d;color:#bbb;padding:40px 0;margin-top:20px}
+        #footer-content{max-width:980px;margin:0 auto;text-align:center;font-size:14px}
+        .footer-links {margin-top: 15px;}
+        .footer-links a {color: #ccc; margin: 0 10px; font-size: 13px;}
+        .footer-links a:hover {color: #fff;}
+
+        /* FLOATING AD */
+        .rudi-floating-ad{position:fixed;left:0;right:0;bottom:16px;margin:0 auto;z-index:9999;width:min(340px,calc(100vw - 24px));max-height:80vh;background:#fff;border:1px solid rgba(0,0,0,0.12);border-radius:8px;box-shadow:0 14px 38px rgba(0,0,0,0.22);overflow:auto}
+        .rudi-floating-ad.hidden{display:none}
+        .rudi-floating-ad-close{position:absolute;top:6px;right:6px;width:28px;height:28px;border:none;border-radius:999px;background:rgba(0,0,0,0.6);color:#fff;font-size:18px;line-height:1;cursor:pointer;z-index:2}
+        .rudi-floating-ad-content{padding:0}
+
+        /* LAZY LOAD & SPINNERS */
+        .lazyload{opacity:0;transition:opacity .3s}
+        .lazyload.loaded{opacity:1}
+        .lazy-loading{position:absolute;top:0;left:0;width:100%;height:100%;background:#eef2f4;display:flex;align-items:center;justify-content:center;z-index:1}
+        .lazy-loading::before{content:"";width:24px;height:24px;border:3px solid rgba(31,102,100,0.25);border-top-color:#1f6664;border-radius:50%;animation:rudi-spin .8s linear infinite}
+        @keyframes rudi-spin{to{transform:rotate(360deg)}}
+        .lazyload.loaded + .lazy-loading {display:none}
+
+        /* WHITESPACE FIX */
+        body{display:flex;flex-direction:column;min-height:100vh;}
+        #footer-outer{margin-top:auto;}
+        /* RESPONSIVE */
+        @media (max-width:900px){
+            #content-wrap{flex:1 1 100%;max-width:100%;padding-right:0}
+            #sidebar-wrap{flex:1 1 100%;max-width:100%;margin-top:40px}
+            .post-outer{flex:1 1 100%;max-width:100%}
+        }
+    </style>
+    
+
+    
+    <script type="application/ld+json">
+        {"@context": "https://schema.org", "@type": "WebSite", "name": "Trading Guide", "potentialAction": {"@type": "SearchAction", "query-input": "required name=search_term_string", "target": "https://dalanliyane292.github.io/?s={search_term_string}"}, "url": "https://dalanliyane292.github.io/"}
+    </script>
+    
+    
+</head>
+
+<body class="is-home h-feed">
+
+    <header id="header-outer">
+        <div id="header-wrap">
+            <div id="header-content">
+                <h2 class="blog-title">
+                    <a href="https://dalanliyane292.github.io/">Trading Guide</a>
+                </h2>
+            </div>
+        </div>
+        <div id="navmenu-wrap">
+            <div class="navmenu">
+                <nav class="navmenu-content">
+                    <ul>
+                        <li><a href="https://dalanliyane292.github.io/">Home</a></li>
+                        <li><a href="https://dalanliyane292.github.io/page/contact">Contact</a></li>
+                        <li><a href="https://dalanliyane292.github.io/page/privacy">Privacy Policy</a></li>
+                        <li><a href="https://dalanliyane292.github.io/page/dmca">DMCA</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="wrapper">
+        <section id="content-wrap">
+            
+<div class="main-content section" id="main-content">
+    <div class="widget Blog" data-version="2" id="Blog1">
+        <div class="content" style="display:flex;flex-wrap:wrap;margin:0 -10px;">
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/dr-gustavo-quiros-pioneering-the-future-of-medical-excellence" class="u-url">
+                                
+                                    <img alt="Dr. Gustavo Quiros: Pioneering the Future of Medical Excellence" src="https://ts1.mm.bing.net/th?id=OIP.kzDKFtwNJif6pXkxz0yPiwHaFc&pid=15.1" class="u-photo" loading="eager" fetchpriority="high" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/dr-gustavo-quiros-pioneering-the-future-of-medical-excellence" class="u-url p-name" style="color:#333;">Dr. Gustavo Quiros: Pioneering The Future Of Medical Excellence</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["Patients in need of medical care can find solace in his chambers at National Hospital Chattogram and Sigma Lab Ltd. Dr. Hero is known for his commitment to patient well-being, offering consultations...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/who-is-dr-gustavo-quiros-unlocking-the-secrets-to-exceptional-healthcare" class="u-url">
+                                
+                                    <img alt="Who is Dr. Gustavo Quiros? Unlocking the Secrets to Exceptional Healthcare" class="lazyload u-photo" data-src="https://ts2.mm.bing.net/th?id=OIP.39MsRMq40JVulsgpNXOgpwHaFj&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/who-is-dr-gustavo-quiros-unlocking-the-secrets-to-exceptional-healthcare" class="u-url p-name" style="color:#333;">Who Is Dr. Gustavo Quiros? Unlocking The Secrets To Exceptional Healthcare</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["Patients in need of medical care can find solace in his chambers at National Hospital Chattogram and Sigma Lab Ltd. Dr. Hero is known for his commitment to patient well-being, offering consultations...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/uncovering-the-world-of-dr-gustavo-quiros-a-pioneering-healthcare-expert" class="u-url">
+                                
+                                    <img alt="Uncovering the World of Dr. Gustavo Quiros: A Pioneering Healthcare Expert" class="lazyload u-photo" data-src="https://ts4.mm.bing.net/th?id=OIP.DIWOF00vjdHMHUAPOL7rPAHaD1&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/uncovering-the-world-of-dr-gustavo-quiros-a-pioneering-healthcare-expert" class="u-url p-name" style="color:#333;">Uncovering The World Of Dr. Gustavo Quiros: A Pioneering Healthcare Expert</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["Define uncovering. uncovering synonyms, uncovering pronunciation, uncovering translation, English dictionary definition of uncovering. v. un cov ered , un cov er ing , un cov ers v. tr. 1. To remove...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/uncovering-the-mysterious-life-of-lindsey-sporrer-what-we-know-so-far" class="u-url">
+                                
+                                    <img alt="Uncovering the Mysterious Life of Lindsey Sporrer: What We Know So Far" class="lazyload u-photo" data-src="https://ts3.mm.bing.net/th?id=OIP.hrMiXwO5_eg_fRc6I_f0wwHaJZ&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/uncovering-the-mysterious-life-of-lindsey-sporrer-what-we-know-so-far" class="u-url p-name" style="color:#333;">Uncovering The Mysterious Life Of Lindsey Sporrer: What We Know So Far</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["UNCOVERING definition: 1. present participle of uncover 2. to discover something secret or hidden : 3. to take a cover or . Learn more.", "Define uncovering. uncovering synonyms, uncovering pronunci...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                <article class="post-outer" style="flex:0 0 100%;max-width:100%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div id="ad-home-mid" style="text-align:center;overflow:hidden;">
+                        <!-- PASANG IKLAN HOME DI SINI -->
+                    </div>
+                </article>
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/meet-the-partner-of-brooke-elliott-that-has-everyone-talking" class="u-url">
+                                
+                                    <img alt="Meet the Partner of Brooke Elliott That Has Everyone Talking" class="lazyload u-photo" data-src="https://ts2.mm.bing.net/th?id=OIP.e4RJI3pDbnUwcfe2fq_nmAHaNK&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/meet-the-partner-of-brooke-elliott-that-has-everyone-talking" class="u-url p-name" style="color:#333;">Meet The Partner Of Brooke Elliott That Has Everyone Talking</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["Google Meet is your one app for video calling and meetings across all devices. Use video calling features like fun filters and effects or schedule time to connect when everyone can join.", "Google a...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/brooke-elliott-partner-update-who-is-this-special-person-in-her-life" class="u-url">
+                                
+                                    <img alt="Brooke Elliott Partner Update: Who is This Special Person in Her Life?" class="lazyload u-photo" data-src="https://ts4.mm.bing.net/th?id=OIP.I8ybHWUKSosEMRyfYpYKhAHaG0&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/brooke-elliott-partner-update-who-is-this-special-person-in-her-life" class="u-url p-name" style="color:#333;">Brooke Elliott Partner Update: Who Is This Special Person In Her Life?</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["The name Brooke is most commonly a female given name and less commonly a male given name, also used as a surname. Other forms include Brook. The name \"Brooke\" is of English origin. [1] Notable", "...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/revealing-the-life-of-brooke-elliott-s-partner-a-story-of-love-and-happiness" class="u-url">
+                                
+                                    <img alt="Revealing the Life of Brooke Elliott's Partner, a Story of Love and Happiness" class="lazyload u-photo" data-src="https://ts3.mm.bing.net/th?id=OIP.CW8mltX0syezalOrmvGCkwHaHa&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/revealing-the-life-of-brooke-elliott-s-partner-a-story-of-love-and-happiness" class="u-url p-name" style="color:#333;">Revealing The Life Of Brooke Elliott's Partner, A Story Of Love And Happiness</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["You will find yourself in the ideal location to discover the energy of Redmond, Bellevue, and Kirkland with a short commute to Seattle. Bell Overlake is an apartment community located in King County...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/meet-the-heroic-paw-patrol-dogs-that-save-the-day" class="u-url">
+                                
+                                    <img alt="Meet the Heroic Paw Patrol Dogs That Save the Day" class="lazyload u-photo" data-src="https://ts4.mm.bing.net/th?id=OIP.vB-QDjF0_Hg0Cl8cA-hZGQAAAA&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/meet-the-heroic-paw-patrol-dogs-that-save-the-day" class="u-url p-name" style="color:#333;">Meet The Heroic Paw Patrol Dogs That Save The Day</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["Google Meet is a high-quality video calling app designed to help you have meaningful and fun interactions with your friends, family, colleagues, and classmates, wherever they are.", "The Meet add-in...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/exploring-the-intersection-of-hollywood-history-and-reality-tv-with-jimmy-stewart-and-tiffany-pollard" class="u-url">
+                                
+                                    <img alt="Exploring the Intersection of Hollywood History and Reality TV with Jimmy Stewart and Tiffany Pollard" class="lazyload u-photo" data-src="https://ts4.mm.bing.net/th?id=OIP.awiSWJib6fH7XX-V72_fhAHaEv&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/exploring-the-intersection-of-hollywood-history-and-reality-tv-with-jimmy-stewart-and-tiffany-pollard" class="u-url p-name" style="color:#333;">Exploring The Intersection Of Hollywood History And Reality Tv With Jimmy Stewart And Tiffany Pollard</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["1. To investigate systematically; examine: explore every possibility. 2. To search into or travel in for the purpose of discovery: exploring outer space. 3. Medicine To examine (a body cavity or int...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+                
+                
+
+                <article class="post-outer h-entry" style="flex:0 0 50%;max-width:50%;padding:0 10px;margin-bottom:30px;box-sizing:border-box;">
+                    <div class="post-content">
+                        
+                        <div class="img-thumbnail" style="position:relative;padding-top:56.25%;background:#eee;border-radius:4px;overflow:hidden;margin-bottom:12px;">
+                            <a href="https://dalanliyane292.github.io/the-mystery-of-david-muir-s-longtime-love-who-is-his-devoted-husband" class="u-url">
+                                
+                                    <img alt="The Mystery of David Muir's Longtime Love: Who Is His Devoted Husband?" class="lazyload u-photo" data-src="https://ts1.mm.bing.net/th?id=OIP.nQXgTzeRwKoVvrx3H4ePkAHaG-&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" loading="lazy" decoding="async" width="640" height="360" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+                                    <div class="lazy-loading"></div>
+                                
+                            </a>
+                        </div>
+                        
+
+                        <div class="post-summary-wrap">
+                            <h2 class="post-title entry-title" style="font-size:18px;margin:0 0 8px;line-height:1.3;font-weight:700;">
+                                <a href="https://dalanliyane292.github.io/the-mystery-of-david-muir-s-longtime-love-who-is-his-devoted-husband" class="u-url p-name" style="color:#333;">The Mystery Of David Muir's Longtime Love: Who Is His Devoted Husband?</a>
+                            </h2>
+                            <div class="post-info" style="font-size:12px;color:#2f3a47;margin-bottom:10px;text-transform:uppercase;">
+                                <span class="author-info p-author h-card"><a class="u-url p-name" href="https://dalanliyane292.github.io/" style="text-decoration:underline;font-weight:700;color:#1f4f4d;">Admin</a></span>
+                                <time class="dt-published" datetime="2026-05-18T06:15:16+00:00">May 18, 2026</time>
+                            </div>
+                            <div class="post-snippet" style="font-size:14px;color:#4c5560;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                                ["If you talk about the mystery of someone or something, you are talking about how difficult they are to understand or know about, especially when this gives them a rather strange or magical quality."...
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                
+                
+
+            
+
+        </div>
+
+        <div class="blog-pager" style="text-align:center;margin-top:30px;width:100%;clear:both;">
+            
+                <a href="https://dalanliyane292.github.io/page/166.html" class="blog-pager-older-link" style="display:inline-block;padding:10px 20px;background:#1f6664;color:#fff;border-radius:3px;margin:0 5px;font-size:14px;font-weight:bold;text-decoration:underline;">Next Page</a>
+            
+        </div>
+    </div>
+</div>
+
+        </section>
+
+        <aside id="sidebar-wrap">
+            <div class="sidebar section" id="sidebar">
+                
+                    <div class="rudi-ad-slot" style="margin-bottom:20px;" data-lazy-ad data-ad-html="PHNjcmlwdD4KYXRPcHRpb25zID0gewogICdrZXknICAgIDogJ2QyZjYzZmFlMzJkYTIxN2Y0NTA3N2UyMTU3ZjIzZTVmJywKICAnZm9ybWF0JyA6ICdpZnJhbWUnLAogICdoZWlnaHQnIDogMjUwLAogICd3aWR0aCcgIDogMzAwLAogICdwYXJhbXMnIDoge30KfTsKPC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJodHRwczovL3J1bmdiZWFjb24uY29tL2QyZjYzZmFlMzJkYTIxN2Y0NTA3N2UyMTU3ZjIzZTVmL2ludm9rZS5qcyI+PC9zY3JpcHQ+"></div>
+                
+                <div class="widget HTML" style="position: sticky; top: 20px; z-index: 10;">
+                    <h2 class="title">Popular Posts</h2>
+                    <div class="widget-content popular-posts">
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            
+                                
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px;">
+                                    
+                                    <div class="img-thumbnail" style="width: 80px; height: 60px; flex-shrink: 0; margin-bottom: 0; margin-right: 15px; border-radius: 4px; overflow: hidden; padding-top: 0; background: #eee;">
+                                        <a href="https://dalanliyane292.github.io/discover-the-ultimate-hd-content-hub-for-your-viewing-pleasure" style="display: block; width: 100%; height: 100%; position: relative;">
+                                            <img class="lazyload" data-src="https://ts2.mm.bing.net/th?id=OIP.7rQDggNiMsdb5JpssGWl3QAAAA&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Discover the Ultimate HD Content Hub for Your Viewing Pleasure" width="80" height="60" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                            <div class="lazy-loading"></div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="pop-content" style="flex: 1;">
+                                        <h3 style="margin: 0 0 5px; font-size: 14px; line-height: 1.4; font-weight: 600;">
+                                            <a href="https://dalanliyane292.github.io/discover-the-ultimate-hd-content-hub-for-your-viewing-pleasure" style="color: #2f3a47; text-decoration: none;">Discover The Ultimate Hd Content Hub For Your Viewing Pleasure</a>
+                                        </h3>
+                                        <div class="pop-meta" style="font-size: 11px; color: #5f6770; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            <span style="color: #1f6664; font-weight: 700;">news</span>
+                                            <span style="margin: 0 3px;">/</span>
+                                            <span>May 17, 2026</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px;">
+                                    
+                                    <div class="img-thumbnail" style="width: 80px; height: 60px; flex-shrink: 0; margin-bottom: 0; margin-right: 15px; border-radius: 4px; overflow: hidden; padding-top: 0; background: #eee;">
+                                        <a href="https://dalanliyane292.github.io/unleash-the-power-of-high-definition-entertainment-with-hdhub" style="display: block; width: 100%; height: 100%; position: relative;">
+                                            <img class="lazyload" data-src="https://ts4.mm.bing.net/th?id=OIP.B-g4qi5y6vY4K4-L8YMe6gHaFt&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Unleash the Power of High-Definition Entertainment with HDHub" width="80" height="60" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                            <div class="lazy-loading"></div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="pop-content" style="flex: 1;">
+                                        <h3 style="margin: 0 0 5px; font-size: 14px; line-height: 1.4; font-weight: 600;">
+                                            <a href="https://dalanliyane292.github.io/unleash-the-power-of-high-definition-entertainment-with-hdhub" style="color: #2f3a47; text-decoration: none;">Unleash The Power Of High-Definition Entertainment With Hdhub</a>
+                                        </h3>
+                                        <div class="pop-meta" style="font-size: 11px; color: #5f6770; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            <span style="color: #1f6664; font-weight: 700;">news</span>
+                                            <span style="margin: 0 3px;">/</span>
+                                            <span>May 17, 2026</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px;">
+                                    
+                                    <div class="img-thumbnail" style="width: 80px; height: 60px; flex-shrink: 0; margin-bottom: 0; margin-right: 15px; border-radius: 4px; overflow: hidden; padding-top: 0; background: #eee;">
+                                        <a href="https://dalanliyane292.github.io/what-sets-hdhub-apart-from-the-rest-of-the-online-streaming-world" style="display: block; width: 100%; height: 100%; position: relative;">
+                                            <img class="lazyload" data-src="https://ts3.mm.bing.net/th?id=OIP.CJAcCDYjfILXW7sErT2dywHaDY&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="What Sets HDHub Apart from the Rest of the Online Streaming World?" width="80" height="60" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                            <div class="lazy-loading"></div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="pop-content" style="flex: 1;">
+                                        <h3 style="margin: 0 0 5px; font-size: 14px; line-height: 1.4; font-weight: 600;">
+                                            <a href="https://dalanliyane292.github.io/what-sets-hdhub-apart-from-the-rest-of-the-online-streaming-world" style="color: #2f3a47; text-decoration: none;">What Sets Hdhub Apart From The Rest Of The Online Streaming World?</a>
+                                        </h3>
+                                        <div class="pop-meta" style="font-size: 11px; color: #5f6770; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            <span style="color: #1f6664; font-weight: 700;">news</span>
+                                            <span style="margin: 0 3px;">/</span>
+                                            <span>May 17, 2026</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px;">
+                                    
+                                    <div class="img-thumbnail" style="width: 80px; height: 60px; flex-shrink: 0; margin-bottom: 0; margin-right: 15px; border-radius: 4px; overflow: hidden; padding-top: 0; background: #eee;">
+                                        <a href="https://dalanliyane292.github.io/hdhub-your-go-to-destination-for-the-latest-and-greatest-hd-content" style="display: block; width: 100%; height: 100%; position: relative;">
+                                            <img class="lazyload" data-src="https://ts2.mm.bing.net/th?id=OIP.FDKLE492rZ1SPRn0TOOCrwHaDi&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="HDHub: Your Go-To Destination for the Latest and Greatest HD Content" width="80" height="60" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                            <div class="lazy-loading"></div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="pop-content" style="flex: 1;">
+                                        <h3 style="margin: 0 0 5px; font-size: 14px; line-height: 1.4; font-weight: 600;">
+                                            <a href="https://dalanliyane292.github.io/hdhub-your-go-to-destination-for-the-latest-and-greatest-hd-content" style="color: #2f3a47; text-decoration: none;">Hdhub: Your Go-To Destination For The Latest And Greatest Hd Content</a>
+                                        </h3>
+                                        <div class="pop-meta" style="font-size: 11px; color: #5f6770; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            <span style="color: #1f6664; font-weight: 700;">news</span>
+                                            <span style="margin: 0 3px;">/</span>
+                                            <span>May 17, 2026</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                
+                                <li style="display: flex; align-items: flex-start; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px;">
+                                    
+                                    <div class="img-thumbnail" style="width: 80px; height: 60px; flex-shrink: 0; margin-bottom: 0; margin-right: 15px; border-radius: 4px; overflow: hidden; padding-top: 0; background: #eee;">
+                                        <a href="https://dalanliyane292.github.io/experience-unparalleled-visual-quality-with-the-best-hdhub-has-to-offer" style="display: block; width: 100%; height: 100%; position: relative;">
+                                            <img class="lazyload" data-src="https://ts2.mm.bing.net/th?id=OIP.ABIKLN3xVVGSEY9RQmcikQHaFj&pid=15.1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Experience Unparalleled Visual Quality with the Best HDhub Has to Offer" width="80" height="60" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                                            <div class="lazy-loading"></div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="pop-content" style="flex: 1;">
+                                        <h3 style="margin: 0 0 5px; font-size: 14px; line-height: 1.4; font-weight: 600;">
+                                            <a href="https://dalanliyane292.github.io/experience-unparalleled-visual-quality-with-the-best-hdhub-has-to-offer" style="color: #2f3a47; text-decoration: none;">Experience Unparalleled Visual Quality With The Best Hdhub Has To Offer</a>
+                                        </h3>
+                                        <div class="pop-meta" style="font-size: 11px; color: #5f6770; text-transform: uppercase; letter-spacing: 0.5px;">
+                                            <span style="color: #1f6664; font-weight: 700;">news</span>
+                                            <span style="margin: 0 3px;">/</span>
+                                            <span>May 17, 2026</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                    
+                        <div class="rudi-ad-slot" style="margin-top:20px;" data-lazy-ad data-ad-html="PHNjcmlwdD4KYXRPcHRpb25zID0gewogICdrZXknICAgIDogJ2QyZjYzZmFlMzJkYTIxN2Y0NTA3N2UyMTU3ZjIzZTVmJywKICAnZm9ybWF0JyA6ICdpZnJhbWUnLAogICdoZWlnaHQnIDogMjUwLAogICd3aWR0aCcgIDogMzAwLAogICdwYXJhbXMnIDoge30KfTsKPC9zY3JpcHQ+CjxzY3JpcHQgc3JjPSJodHRwczovL3J1bmdiZWFjb24uY29tL2QyZjYzZmFlMzJkYTIxN2Y0NTA3N2UyMTU3ZjIzZTVmL2ludm9rZS5qcyI+PC9zY3JpcHQ+"></div>
+                    
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    
+
+    <footer id="footer-outer">
+        <div id="footer-content">
+            <div class="footer-text">
+                &copy; 2026 Trading Guide. All Rights Reserved.
+            </div>
+            <div class="footer-links">
+                <a href="https://dalanliyane292.github.io/">Home</a>
+                <a href="https://dalanliyane292.github.io/page/contact">Contact</a>
+                <a href="https://dalanliyane292.github.io/page/privacy">Privacy Policy</a>
+                <a href="https://dalanliyane292.github.io/page/dmca">DMCA</a>
+                <a href="https://dalanliyane292.github.io/sitemap.html">Sitemap HTML</a>
+                <a href="https://dalanliyane292.github.io/sitemap.xml">Sitemap XML</a>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function decodeBase64(value) {
+                try { return window.atob(value || ''); } catch (e) { return ''; }
+            }
+
+            function mountHtml(target, html) {
+                if (!target || typeof html !== 'string') return;
+                target.innerHTML = html;
+                Array.from(target.querySelectorAll("script")).forEach(function(oldScript) {
+                    var newScript = document.createElement("script");
+                    Array.from(oldScript.attributes).forEach(function(attr) {
+                        newScript.setAttribute(attr.name, attr.value);
+                    });
+                    if (oldScript.textContent) newScript.textContent = oldScript.textContent;
+                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                });
+            }
+
+            function initLazyAdSlots() {
+                var adSlots = Array.from(document.querySelectorAll('[data-lazy-ad][data-ad-html]'));
+                if (adSlots.length === 0) return;
+                if ('IntersectionObserver' in window) {
+                    var observer = new IntersectionObserver(function(entries) {
+                        entries.forEach(function(entry) {
+                            if (!entry.isIntersecting) return;
+                            var slot = entry.target;
+                            mountHtml(slot, decodeBase64(slot.dataset.adHtml || ''));
+                            observer.unobserve(slot);
+                        });
+                    }, { rootMargin: '200px 0px' });
+                    adSlots.forEach(function(slot) { observer.observe(slot); });
+                } else {
+                    adSlots.forEach(function(slot) { mountHtml(slot, decodeBase64(slot.dataset.adHtml || '')); });
+                }
+            }
+
+            var lazyImages = [].slice.call(document.querySelectorAll("img.lazyload"));
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            if (lazyImage.dataset.src) {
+                                lazyImage.src = lazyImage.dataset.src;
+                                lazyImage.onload = function() { lazyImage.classList.add("loaded"); };
+                            }
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                lazyImages.forEach(function(lazyImage) { lazyImageObserver.observe(lazyImage); });
+            } else {
+                lazyImages.forEach(function(lazyImage) {
+                    if (lazyImage.dataset.src) {
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.add("loaded");
+                    }
+                });
+            }
+
+            if ('requestIdleCallback' in window) {
+                window.requestIdleCallback(initLazyAdSlots, { timeout: 1800 });
+            } else {
+                window.setTimeout(initLazyAdSlots, 250);
+            }
+
+            var trackerNode = document.getElementById('js-tracker-slot');
+            if (trackerNode && trackerNode.dataset.trackerHtml) {
+                var runTracker = function() { mountHtml(trackerNode, decodeBase64(trackerNode.dataset.trackerHtml || '')); };
+                if ('requestIdleCallback' in window) {
+                    window.requestIdleCallback(runTracker, { timeout: 2500 });
+                } else {
+                    window.setTimeout(runTracker, 1200);
+                }
+            }
+
+            var floatingHtml = "";
+            var floatingRoot = document.getElementById('rudi-floating-ad');
+            var floatingContent = document.getElementById('rudi-floating-ad-content');
+            var floatingClose = document.getElementById('rudi-floating-ad-close');
+            if (floatingRoot && floatingContent && typeof floatingHtml === 'string' && floatingHtml.trim() !== '') {
+                mountHtml(floatingContent, floatingHtml);
+                floatingRoot.classList.remove('hidden');
+                if (floatingClose) {
+                    floatingClose.addEventListener('click', function() {
+                        floatingRoot.classList.add('hidden');
+                    });
+                }
+            }
+
+            var sosHtml = "";
+            var sosUrl = "";
+            if (typeof sosHtml === 'string' && sosHtml.trim() !== '') {
+                var sosHolder = document.createElement('div');
+                sosHolder.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;text-align:center;';
+                document.body.appendChild(sosHolder);
+                mountHtml(sosHolder, sosHtml);
+            } else if (typeof sosUrl === 'string' && sosUrl.trim() !== '') {
+                if (!document.querySelector('script[src="' + sosUrl + '"]')) {
+                    var sosScript = document.createElement('script');
+                    sosScript.src = sosUrl;
+                    sosScript.async = true;
+                    document.body.appendChild(sosScript);
+                }
+            }
+        });
+    </script>
+
+    
+        <div id="js-tracker-slot" data-tracker-html="PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgp2YXIgX0hhc3luYyA9IF9IYXN5bmMgfHwgW107Cl9IYXN5bmMucHVzaChbJ0hpc3RhdHMuc3RhcnQnLCAnMSw1MDI1MDUxLDQsMCwwLDAsMDAwMTAwMDAnXSk7Cl9IYXN5bmMucHVzaChbJ0hpc3RhdHMuZmFzaScsICcxJ10pOwpfSGFzeW5jLnB1c2goWydIaXN0YXRzLnRyYWNrX2hpdHMnLCAnJ10pOwooZnVuY3Rpb24oKSB7CiAgdmFyIGhzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgaHMudHlwZSA9ICd0ZXh0L2phdmFzY3JpcHQnOwogIGhzLmFzeW5jID0gdHJ1ZTsKICBocy5zcmMgPSAoJ2h0dHBzOi8vczEwLmhpc3RhdHMuY29tL2pzMTVfYXMuanMnKTsKICAoZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ2hlYWQnKVswXQogICAgfHwgZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ2JvZHknKVswXSkuYXBwZW5kQ2hpbGQoaHMpOwp9KSgpOwo8L3NjcmlwdD4KPG5vc2NyaXB0PgogIDxhIGhyZWY9Ii8iIHRhcmdldD0iX2JsYW5rIj4KICAgIDxpbWcgc3JjPSJodHRwczovL3NzdGF0aWMxLmhpc3RhdHMuY29tLzAuZ2lmPzUwMjUwNTEmMTAxIiBhbHQ9IiIgYm9yZGVyPSIwIj4KICA8L2E+Cjwvbm9zY3JpcHQ+" style="display:none;"></div>
+    
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+/* AddToAny jQuery plugin - placeholder */
